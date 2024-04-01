@@ -1,6 +1,7 @@
 const mongoose= require('mongoose');
+const dbUrl=`mongodb+srv://${process.env.user}:${process.env.password}@cluster0.omcuk69.mongodb.net/portfolio`;
 
-mongoose.connect(process.env.mongo_url);
+mongoose.connect(dbUrl);
 
 const connection = mongoose.connection;
 
