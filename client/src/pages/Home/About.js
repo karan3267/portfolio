@@ -27,9 +27,9 @@ function About() {
         <h1 className="text-xl">
           Here are a few technologies I've been working with recently:
         </h1>
-        <div className="flex flex-wrap gap-10 mt-10">
+        <div className="flex flex-wrap items-center justify-center gap-10 mt-10">
           {skills.map((skill) => (
-            <div className=" border border-teritary py-4 px-6">{skill}</div>
+            <div className=" border border-teritary rounded-md py-3 px-4">{skill}</div>
           ))}
         </div>
       </div>
