@@ -4,7 +4,7 @@ import About from "./About";
 import Intro from "./Intro";
 import Experience from "./Experience";
 import Projects from "./Projects";
-// import Courses from "./Courses";
+import Courses from "./Courses";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Sider from "./Sider";
@@ -40,7 +40,7 @@ export default function Home() {
           <div id="Experience">
             <Experience />
           </div>
-          {/* <Courses /> */}
+          <Courses />
           <div id="Contact">
             <Contact />
           </div>

@@ -15,14 +15,15 @@ function App() {
       dispatch(SetPortfolioData(response.data));
       dispatch(HideLoading());
     } catch (error) {
-      console.log(error);
+      console.error("Error fetching portfolio data:", error);
+      dispatch(HideLoading());
     }
   };
   useEffect(() => {
     if(!portfolioData){
       getPortfolioData();
     }
-  },[portfolioData]);
+  },[]);
   return (
     <BrowserRouter>
       {loading ? <Loader /> : null}
